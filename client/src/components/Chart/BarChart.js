@@ -8,7 +8,7 @@ export const BarChart = ({ data, urlParam, unit }) => {
 
   const afterBody = () => {
     return unit
-  }
+}
 
   const barChartOptions = {
     onClick: async (e, element) => {

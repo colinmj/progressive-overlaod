@@ -1,0 +1,27 @@
+.lift {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__intro {
+    padding-right: 60px;
+    margin-bottom: 30px;
+    h4 {
+      color: $blue_1;
+    }
+
+    > p {
+      color: $blue_1;
+      span {
+        margin-left: 5px;
+        color: $maintext;
+      }
+    }
+  }
+
+  &__form {
+    > div {
+      margin-bottom: 40px;
+    }
+  }
+}

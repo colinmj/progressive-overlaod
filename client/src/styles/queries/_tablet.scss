@@ -1,0 +1,63 @@
+@media all and (max-width: 760px) {
+  //add workout
+  .add-workout {
+    &__exercise-selection {
+      > div {
+        flex-basis: 100%;
+
+        select,
+        input,
+        .exercise-search {
+          width: 100% !important;
+        }
+      }
+    }
+
+    &__form-wrapper {
+      > div {
+        &.add-workout__date-wrapper {
+          flex-basis: 100%;
+
+          input {
+            width: 100%;
+          }
+        }
+
+        &.MuiTextField-root {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+
+  //dashboard
+
+  .dashboard-filters {
+    justify-content: space-between;
+    > form {
+      .MuiSelect-root {
+        width: 100%;
+      }
+
+      input {
+        width: 100%;
+      }
+
+      &:first-of-type {
+        flex-basis: 100%;
+      }
+
+      flex-basis: 45%;
+    }
+  }
+
+  //single exercise
+  .po-exercise {
+    .MuiPaper-root {
+      flex-wrap: wrap;
+      > div {
+        flex-basis: 100%;
+      }
+    }
+  }
+}

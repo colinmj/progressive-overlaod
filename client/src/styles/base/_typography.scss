@@ -1,0 +1,54 @@
+@mixin mainfont() {
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  @include mainfont();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+button {
+  border: none;
+
+  transition: all ease 100ms;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+a {
+  color: $blue_1;
+}

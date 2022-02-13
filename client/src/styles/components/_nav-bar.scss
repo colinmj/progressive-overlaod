@@ -1,0 +1,56 @@
+#main-nav {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25px;
+  border-bottom: 1px solid $light-gray;
+  margin-bottom: 50px;
+
+  h2 {
+    color: $blue_1;
+  }
+
+  .user-info {
+    display: flex;
+    flex-wrap: wrap;
+
+    h4 {
+      padding: 0;
+    }
+
+    > div {
+      padding: 0 5px;
+      display: flex;
+      align-items: center;
+
+      &:first-of-type {
+        margin-right: 30px;
+      }
+    }
+
+    label {
+      margin-right: 5px;
+    }
+  }
+}
+
+#util-nav {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  background: $blue_1;
+
+  a {
+    color: #fff;
+
+    + a {
+      margin-left: 15px;
+    }
+  }
+}

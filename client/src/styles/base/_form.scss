@@ -1,0 +1,31 @@
+select {
+  @include mainfont();
+  border-radius: 5px;
+  border: 1px solid $light-gray;
+  height: 54px;
+  padding: 0 10px;
+  width: 225px;
+}
+
+label {
+  color: $blue_1;
+  display: block;
+  padding-bottom: 5px;
+}
+
+.button {
+  background: $blue_1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  min-height: 50px;
+  min-width: 180px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.btn-red {
+    background: red;
+  }
+}

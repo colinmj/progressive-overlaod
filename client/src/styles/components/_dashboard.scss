@@ -1,0 +1,77 @@
+.dashboard-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding-bottom: 50px;
+
+  > * {
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+.volume-filter {
+  min-width: 200px;
+}
+
+.dashboard-description {
+  padding-bottom: 30px;
+  span {
+    padding: 0 5px;
+    color: $blue_1;
+  }
+}
+
+.react-datepicker-wrapper {
+  input {
+    height: 53px;
+    border-radius: 5px;
+    border: 1px solid $light-gray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+
+  input::placeholder {
+    @include mainfont();
+  }
+}
+
+.MuiSelect-root {
+  font-family: 'Open Sans', sans-serif !important;
+  border-radius: 5px;
+  border: 1px solid $light-gray;
+
+  fieldset {
+    border: none;
+  }
+}
+
+.MuiSelect-select {
+  @include mainfont();
+}
+
+li.increase {
+  color: $green;
+}
+
+li.decrease {
+  color: $red;
+}
+
+.po__dashboard-exercises {
+  list-style: none;
+
+  li {
+    margin-bottom: 5px;
+
+    button {
+      background: none;
+      color: $blue_1;
+
+      &:hover {
+        color: $blue_2;
+      }
+    }
+  }
+}

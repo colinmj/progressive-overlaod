@@ -1,0 +1,35 @@
+#el-nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 10px;
+
+  > li {
+    margin: 5px 8px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      display: none;
+      padding-right: 5px;
+    }
+
+    &.active {
+      svg {
+        display: block;
+      }
+
+      .el-btn {
+        color: #fff;
+        background: $blue_1;
+      }
+    }
+  }
+}
+
+.el-btn {
+  background: #fff;
+  border: 1px solid $blue_1;
+  color: $blue_1;
+  border-radius: 3px;
+}

@@ -1,0 +1,41 @@
+.workout-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.workout-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $light-gray;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  align-items: center;
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    h4 {
+      padding-bottom: 0;
+      margin-right: 10px;
+      color: $blue_1;
+    }
+
+    svg {
+      fill: $blue_1;
+      margin-right: 10px;
+    }
+  }
+}
+
+.workout-list-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  p {
+    margin-right: 5px;
+  }
+}

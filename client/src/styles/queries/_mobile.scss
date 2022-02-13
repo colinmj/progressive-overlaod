@@ -1,0 +1,8 @@
+@media all and (max-width: 550px) {
+  .dashboard-filters {
+    justify-content: space-between;
+    > form {
+      flex-basis: 100%;
+    }
+  }
+}

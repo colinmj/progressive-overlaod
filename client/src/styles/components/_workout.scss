@@ -1,0 +1,75 @@
+.po__workout-view {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.po {
+  &__workout-chart-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    canvas {
+      width: 500px !important;
+      height: 500px !important;
+
+      @media all and (max-width: 700px) {
+        width: 300px !important;
+        height: 300px !important;
+      }
+    }
+  }
+}
+
+.workout-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  h4 {
+    margin-right: 30px;
+  }
+
+  &__muscle-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 2px solid $light-gray;
+    margin-bottom: 30px;
+
+    > * {
+      padding-bottom: 0;
+      margin-right: 10px;
+    }
+
+    h5 {
+      color: $blue_1;
+    }
+
+    p {
+      font-weight: 700;
+    }
+  }
+}
+
+.workout-data-meta {
+  display: flex;
+  align-items: center;
+  h5 {
+    padding-bottom: 0;
+    margin-right: 10px;
+  }
+}

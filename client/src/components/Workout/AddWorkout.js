@@ -124,9 +124,9 @@ const AddWorkout = () => {
   const workouts = useSelector((state) => state.workouts)
 
   useEffect(() => {
-    // console.log('added workout')
-    // console.log(workouts)
-    window.location.href = '/'
+    console.log('added workout')
+    console.log(workouts)
+    //window.location.href = '/'
   }, [workouts])
 
   //add workout to database and redirect to the dashboard

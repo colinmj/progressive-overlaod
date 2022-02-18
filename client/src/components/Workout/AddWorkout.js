@@ -7,7 +7,7 @@ import { Modal, Box, Button, Container, TextField } from '@mui/material'
 import 'react-datepicker/dist/react-datepicker.css'
 
 //actions
-import { createWorkout } from '../../actions/workouts.js'
+import { createWorkout, getWorkouts } from '../../actions/workouts.js'
 import {
   createFavorite,
   getFavorites,
@@ -24,8 +24,6 @@ import WorkoutList from './WorkoutList.js'
 
 //functions
 import { fetchExercisesByName, fetchExercisesByTarget } from '../../api.js'
-
-
 
 const dateFormat = {
   weekday: 'long',
@@ -123,13 +121,20 @@ const AddWorkout = () => {
   }, [dispatch, userEmail])
 
   const favorites = useSelector((state) => state.favorites)
+  const workouts = useSelector((state) => state.workouts)
+
+  useEffect(() => {
+    // console.log('added workout')
+    // console.log(workouts)
+    window.location.href = '/'
+  }, [workouts])
 
   //add workout to database and redirect to the dashboard
   const handleSubmit = (e) => {
     e.preventDefault()
     dispatch(createWorkout(workoutData))
 
-    window.location.href = '/'
+    //window.location.href = '/'
   }
 
   const filterUnit = (value) => {
